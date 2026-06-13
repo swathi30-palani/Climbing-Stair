@@ -1,2 +1,22 @@
-# Climbing-Stair
-to find possible ways to the destiantion
+public class ClimbingStairs {
+    public static int  climbStairs(int n){
+        if ( n <= 1){
+            return 1;
+        }
+        int prev2 = 2;
+        int prev1 = 1;
+        
+        for(int i = 2; i <= n; i++){
+            int current = prev1 + prev2;
+            prev2 = prev1;
+            prev1 = current;
+        }
+        return prev1;
+        
+    }
+    public static void main(String[] args){
+        int n = 5;
+        System.out.print("Number of ways to climb " + n + " Stairs" + climbStairs(n);
+        
+    }
+}
