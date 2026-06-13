@@ -1,3 +1,15 @@
+//climbing stairs
+//2024 amazon interview question
+//Base case
+//ways(0)=1
+//ways(1)=1
+
+//dry run for n = 5
+//ways(2)=ways(1)+ways(0)=1+1=2
+//ways(3)=ways(2)+ways(1)=2+1=3
+//ways(4)=ways(3)+ways(2)=3+2=5
+//ways(5)=ways(4)+ways(3)=5+3=
+
 public class ClimbingStairs {
     public static int  climbStairs(int n){
         if ( n <= 1){
